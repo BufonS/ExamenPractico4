@@ -1,6 +1,6 @@
 package com.example;
 
-import com.example.Empleado.Dpt;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,6 +1,7 @@
 package com.example;
 
 import com.example.Empleado.Dpt;
+import com.example.Estudiante.Facultad;
 import com.example.Persona.Genero;
 
 /**
@@ -29,26 +30,38 @@ public class App
     		.genero(Genero.FEMENINO)
     		.departamento(Dpt.RRHH)
     		.salario(3000)
-    		.build(),
-    		Empleado.builder()
-    		.nombre("Pedro")
-    		.primerApellido("Abascal")
-    		.segundoApellido("Fernandez")
-    		.genero(Genero.MASCULINO)
-    		.departamento(Dpt.LIMPIEZA)
-    		.salario(1500)
-    		.build(),
-    		Empleado.builder()
-    		.nombre("Anya")
-    		.primerApellido("Taylor")
-    		.segundoApellido("Joy")
-    		.genero(Genero.FEMENINO)
-    		.salario(2800)
     		.build()
     	};
     	
+    	Estudiante[] estudiantes = {
+    			Estudiante.builder()
+    			.nombre("Hugo")
+    			.primerApellido("Vila")
+    			.genero(Genero.MASCULINO)
+    			.facultad(Facultad.CIENCIAS)
+    			.totalAsignaturas(10)
+    			.build(),
+    			Estudiante.builder()
+    			.nombre("Robert")
+    			.primerApellido("Niro")
+    			.genero(Genero.MASCULINO)
+    			.facultad(Facultad.DERECHO)
+    			.totalAsignaturas(9)
+    			.build(),
+    			Estudiante.builder()
+    			.nombre("Susana")
+    			.primerApellido("Rodrigez")
+    			.genero(Genero.FEMENINO)
+    			.facultad(Facultad.CIENCIAS)
+    			.totalAsignaturas(10)
+    			.build()
+    			
+    	};
+    	
     	for(Empleado empleado : empleados)
-    		System.out.println(empleado.getSalario());
+    		System.out.println(empleado);
+    	for(Estudiante estudiante : estudiantes)
+    		System.out.println(estudiante);
    
     	
     	
